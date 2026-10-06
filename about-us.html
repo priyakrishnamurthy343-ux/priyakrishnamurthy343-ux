@@ -1,0 +1,1408 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>About Cool Square Studio | Our Story and Team</title>
+   <meta name="description" content="Meet Cool Square Studio, the creative team behind cinematic AI, VFX, CGI and immersive production.">
+   <meta name="keywords" content="AI studio, VFX, video production, AI filmmaking, XR, immersive content, COOL SQUARE STUDIO">
+   <meta name="author" content="COOL SQUARE STUDIO">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="canonical" href="https://coolsquarestudio.com/about-us.html">
+   <meta property="og:image" content="https://coolsquarestudio.com/assets/images/CGI.jpeg">
+
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "COOL SQUARE STUDIO",
+         "url": "https://coolsquarestudio.com/",
+         "logo": "https://coolsquarestudio.com/favicon.png",
+         "sameAs": [
+            "https://www.linkedin.com/company/coolsquarestudio/"
+         ]
+      }
+   </script>
+
+   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/custom-animation.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+
+   <style>
+      /* =========================================================
+         ABOUT PAGE — CINEMATIC STUDIO EXPERIENCE
+         Scoped under .cs-about to avoid touching global site styles.
+      ========================================================= */
+      html, body { max-width: 100%; overflow-x: hidden; }
+
+      .cs-about {
+         background: #050505;
+         color: #f5f1ea;
+         overflow: hidden;
+      }
+
+      .cs-about section { position: relative; }
+
+      .cs-about .wrap {
+         width: min(1280px, calc(100% - 48px));
+         margin: 0 auto;
+         position: relative;
+         z-index: 2;
+      }
+
+      .cs-about .cs-pad { padding: 150px 0; }
+      .cs-about .cs-pad-sm { padding: 90px 0; }
+
+      .cs-about .eyebrow {
+         display: inline-flex;
+         align-items: center;
+         gap: 12px;
+         font-size: 12px;
+         letter-spacing: 0.32em;
+         text-transform: uppercase;
+         color: rgba(245, 241, 234, 0.6);
+         margin-bottom: 22px;
+      }
+
+      .cs-about .eyebrow::before {
+         content: "";
+         width: 42px;
+         height: 1px;
+         background: linear-gradient(90deg, #f5f1ea, transparent);
+      }
+
+      .cs-about .headline {
+         font-family: "Cormorant Garamond", "Bodoni Moda", "Playfair Display", serif;
+         font-weight: 500;
+         font-size: clamp(42px, 6vw, 96px);
+         line-height: 0.98;
+         letter-spacing: -0.01em;
+         text-transform: uppercase;
+         margin: 0 0 24px;
+         opacity: 1;
+      }
+
+      .cs-about .copy {
+         max-width: 620px;
+         color: rgba(245, 241, 234, 0.72);
+         line-height: 1.9;
+         font-size: 16px;
+      }
+
+      .cs-about .copy.centered { max-width: 760px; margin-left: auto; margin-right: auto; text-align: center; }
+
+      /* reveal-on-scroll */
+      .cs-about .reveal {
+         opacity: 0;
+         transform: translateY(32px);
+         transition: opacity 0.9s cubic-bezier(.16,.84,.44,1), transform 0.9s cubic-bezier(.16,.84,.44,1);
+      }
+      .cs-about .reveal.is-visible { opacity: 1; transform: translateY(0); }
+      .cs-about .headline.reveal,
+      .cs-about .reveal:has(> .headline) { opacity: 1; }
+      .cs-about .reveal-delay-1.is-visible { transition-delay: .08s; }
+      .cs-about .reveal-delay-2.is-visible { transition-delay: .16s; }
+      .cs-about .reveal-delay-3.is-visible { transition-delay: .24s; }
+      .cs-about .reveal-delay-4.is-visible { transition-delay: .32s; }
+
+      /* ---------------------------------------------------------
+         SECTION 01 — HERO
+      --------------------------------------------------------- */
+      .cs-hero {
+         position: relative;
+         min-height: 100vh;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 200px 0 120px;
+         background: radial-gradient(circle at 50% 0%, #12161c 0%, #050505 62%);
+         text-align: center;
+         overflow: hidden;
+      }
+
+      .cs-hero-video-bg {
+         position: absolute;
+         inset: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 0;
+         overflow: hidden;
+      }
+
+      .cs-hero-video-bg video {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 100%;
+         height: 100%;
+         min-width: 100%;
+         min-height: 100%;
+         object-fit: cover;
+         transform: translate(-50%, -50%);
+         opacity: 0.25;
+      }
+
+      .cs-hero-video-bg::after {
+         content: "";
+         position: absolute;
+         inset: 0;
+         background:
+            radial-gradient(circle at 50% 42%, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.4) 55%, rgba(0,0,0,0.55) 100%),
+            linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.22) 35%, rgba(0,0,0,0.42) 100%),
+            rgba(0, 0, 0, 0.28);
+      }
+
+      .cs-hero-content {
+         position: relative;
+         z-index: 2;
+         transform: translate3d(var(--mx, 0px), var(--my, 0px), 0);
+         transition: transform 0.5s ease-out;
+      }
+
+      .cs-hero .headline {
+         font-size: clamp(44px, 8.5vw, 128px);
+         color: #f8f8f8;
+         text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55), 0 0 60px rgba(255, 255, 255, 0.08);
+      }
+
+      .cs-hero .copy {
+         margin: 0 auto;
+         color: rgba(255, 255, 255, 0.86);
+      }
+
+      /* ---------------------------------------------------------
+         CONTENT FRAME SYSTEM (reusable for all future media)
+      --------------------------------------------------------- */
+      .cs-frame {
+         position: relative;
+         border-radius: 26px;
+         border: 1px solid rgba(245, 241, 234, 0.14);
+         background: linear-gradient(150deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
+         box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+         overflow: hidden;
+         min-height: 360px;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+         padding: 26px;
+         transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+         transform-style: preserve-3d;
+         will-change: transform;
+      }
+
+      .cs-frame.tall { min-height: 560px; }
+      .cs-frame.short { min-height: 260px; }
+
+      .cs-frame .cs-frame-bg {
+         position: absolute;
+         inset: 0;
+         background-size: cover;
+         background-position: center;
+         opacity: 0.5;
+         transition: transform 8s ease, opacity 0.6s ease;
+         transform: scale(1.02);
+      }
+
+      .cs-frame:hover .cs-frame-bg { transform: scale(1.08); opacity: 0.62; }
+
+      .cs-frame .cs-frame-photo {
+         position: absolute;
+         inset: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+         opacity: 1;
+         transition: transform 8s ease;
+         transform: scale(1.02);
+      }
+
+      .cs-frame:hover .cs-frame-photo { transform: scale(1.08); }
+
+      .cs-frame::after {
+         content: "";
+         position: absolute;
+         inset: 0;
+         background: linear-gradient(180deg, rgba(5,5,5,0) 30%, rgba(5,5,5,0.92) 100%);
+      }
+
+      .cs-frame::before {
+         content: "";
+         position: absolute;
+         inset: -1px;
+         background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.2) 48%, transparent 100%);
+         transform: translateX(-120%);
+         animation: cs-shimmer 6.5s linear infinite;
+         pointer-events: none;
+         z-index: 3;
+      }
+
+      .cs-frame:hover {
+         transform: translateY(-8px);
+         border-color: rgba(245, 241, 234, 0.32);
+         box-shadow: 0 40px 110px rgba(0,0,0,0.45);
+      }
+
+      .cs-frame-label {
+         position: relative;
+         z-index: 2;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         font-size: 11px;
+         letter-spacing: 0.26em;
+         text-transform: uppercase;
+         color: rgba(245, 241, 234, 0.72);
+         margin-bottom: 14px;
+      }
+
+      .cs-frame-label .dot {
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         background: radial-gradient(circle at 30% 30%, #ffffff, rgba(255,255,255,0.35));
+         box-shadow: 0 0 14px rgba(255,255,255,0.6);
+      }
+
+      .cs-frame h3 {
+         position: relative;
+         z-index: 2;
+         font-size: clamp(20px, 2vw, 28px);
+         margin: 0 0 6px;
+         color: #ffffff;
+      }
+
+      .cs-frame p {
+         position: relative;
+         z-index: 2;
+         margin: 0;
+         color: rgba(245, 241, 234, 0.68);
+         font-size: 14px;
+      }
+
+      .cs-frame .cs-frame-meta {
+         position: relative;
+         z-index: 2;
+         display: flex;
+         gap: 18px;
+         margin-top: 14px;
+         font-size: 12px;
+         letter-spacing: 0.05em;
+         color: rgba(245, 241, 234, 0.6);
+      }
+
+      .cs-frame .cs-play {
+         position: relative;
+         z-index: 2;
+         width: 62px;
+         height: 62px;
+         border-radius: 50%;
+         border: 1px solid rgba(245, 241, 234, 0.35);
+         background: rgba(255,255,255,0.06);
+         backdrop-filter: blur(8px);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         margin-bottom: 18px;
+         align-self: flex-start;
+         transition: transform 0.35s ease, background 0.35s ease;
+      }
+
+      .cs-frame:hover .cs-play { transform: scale(1.08); background: rgba(255,255,255,0.14); }
+
+      @keyframes cs-shimmer {
+         0% { transform: translateX(-120%); }
+         100% { transform: translateX(120%); }
+      }
+
+      /* ---------------------------------------------------------
+         SECTION 02 — STUDIO INTRO
+      --------------------------------------------------------- */
+      .cs-intro-grid {
+         max-width: 760px;
+         margin: 0 auto;
+      }
+
+      .cs-intro-logo { width: min(210px, 60vw); margin-bottom: 30px; opacity: 0.95; }
+
+      .cs-intro-grid h2 { font-size: clamp(32px, 3.6vw, 49px); margin-bottom: 32px; }
+
+      /* ---------------------------------------------------------
+         SECTION 03 — STORY
+      --------------------------------------------------------- */
+      .cs-story-grid {
+         max-width: 760px;
+         margin: 0 auto;
+      }
+
+      .cs-story-grid .eyebrow { margin-bottom: 32px; }
+
+      .cs-story-grid h2.headline { margin-bottom: 32px; }
+
+      .cs-intro-grid .copy,
+      .cs-story-grid .copy {
+         max-width: 760px;
+         font-size: 21px;
+         line-height: 1.9;
+         margin-top: 24px;
+      }
+
+      .cs-intro-grid .copy + .copy,
+      .cs-story-grid .copy + .copy {
+         margin-top: 30px;
+      }
+
+      @media (max-width: 991px) {
+         .cs-intro-grid .copy,
+         .cs-story-grid .copy { font-size: 19px; }
+      }
+
+      @media (max-width: 768px) {
+         .cs-intro-grid .copy,
+         .cs-story-grid .copy { font-size: 17px; }
+      }
+
+      /* ---------------------------------------------------------
+         SECTION 04 — VALUE CARDS
+      --------------------------------------------------------- */
+      .cs-card-grid {
+         display: grid;
+         grid-template-columns: repeat(4, minmax(0, 1fr));
+         gap: 20px;
+      }
+
+      .cs-value-card {
+         position: relative;
+         padding: 32px 26px;
+         border-radius: 22px;
+         border: 1px solid rgba(245, 241, 234, 0.12);
+         background: linear-gradient(150deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
+         overflow: hidden;
+         transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .cs-value-card::before {
+         content: "";
+         position: absolute;
+         inset: 0;
+         border-radius: inherit;
+         padding: 1px;
+         background: linear-gradient(120deg, rgba(255,255,255,0.5), transparent 40%, transparent 60%, rgba(255,255,255,0.35));
+         -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+         -webkit-mask-composite: xor;
+         mask-composite: exclude;
+         opacity: 0;
+         transition: opacity 0.4s ease;
+      }
+
+      .cs-value-card:hover {
+         transform: translateY(-8px);
+         border-color: rgba(245, 241, 234, 0.3);
+         box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+      }
+
+      .cs-value-card:hover::before { opacity: 1; }
+
+      .cs-value-card .num {
+         font-family: "Cormorant Garamond", serif;
+         font-size: 40px;
+         color: rgba(245, 241, 234, 0.35);
+         display: block;
+         margin-bottom: 18px;
+      }
+
+      .cs-value-card h3 { font-size: 18px; margin-bottom: 10px; color: #fff; }
+      .cs-value-card p { color: rgba(245, 241, 234, 0.66); font-size: 14px; line-height: 1.75; margin: 0; }
+
+      /* ---------------------------------------------------------
+         SECTION 05 — SERVICE CARDS
+      --------------------------------------------------------- */
+      .cs-service-grid {
+         display: grid;
+         grid-template-columns: repeat(4, minmax(0, 1fr));
+         gap: 16px;
+      }
+
+      .cs-service-card {
+         position: relative;
+         isolation: isolate;
+         padding: 28px;
+         min-height: 140px;
+         border-radius: 18px;
+         border: 1px solid rgba(245, 241, 234, 0.12);
+         background: #0a0a0a;
+         display: flex;
+         align-items: flex-start;
+         font-size: 16px;
+         letter-spacing: 0.01em;
+         color: #fff;
+         overflow: hidden;
+         transition: transform 0.35s ease, border-color 0.35s ease;
+      }
+
+      .cs-service-card .cs-service-bg {
+         position: absolute;
+         inset: 0;
+         z-index: 0;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         border-radius: inherit;
+         transition: transform 0.35s ease;
+      }
+
+      .cs-service-card .cs-service-overlay {
+         position: absolute;
+         inset: 0;
+         z-index: 1;
+         background: rgba(0, 0, 0, 0.68);
+         border-radius: inherit;
+      }
+
+      .cs-service-card .accent {
+         position: absolute;
+         top: 24px;
+         left: 24px;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         background: rgba(245, 241, 234, 0.8);
+         z-index: 2;
+      }
+
+      .cs-service-card .cs-service-title {
+         position: relative;
+         z-index: 2;
+         display: block;
+         margin-top: 18px;
+         font-size: clamp(18px, 1.4vw, 22px);
+         font-weight: 600;
+         line-height: 1.25;
+         letter-spacing: -0.02em;
+         color: #fff;
+         text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+      }
+
+      .cs-service-card:hover {
+         transform: translateY(-6px) scale(1.02);
+         border-color: rgba(245, 241, 234, 0.32);
+      }
+
+      .cs-service-card:hover .cs-service-bg {
+         transform: scale(1.05);
+      }
+
+      /* Immersive Experiences card: image is framed higher up (stage/crowd),
+         so keep top of the composition visible instead of centering the crop,
+         and use a gentler hover zoom to avoid pushing content further out of frame. */
+      .cs-service-card--immersive .cs-service-bg {
+         background-position: top center;
+      }
+
+      .cs-service-card--immersive:hover .cs-service-bg {
+         transform: scale(1.02);
+      }
+
+      /* ---------------------------------------------------------
+         SECTION 08 — RAW / FINAL SPLIT
+      --------------------------------------------------------- */
+      .cs-split {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         border-radius: 26px;
+         overflow: hidden;
+         border: 1px solid rgba(245, 241, 234, 0.14);
+      }
+
+      .cs-split > div {
+         position: relative;
+         min-height: 380px;
+         padding: 30px;
+         display: flex;
+         align-items: flex-end;
+         background-size: cover;
+         background-position: center;
+      }
+
+      .cs-split > div::after {
+         content: "";
+         position: absolute;
+         inset: 0;
+         background: linear-gradient(180deg, rgba(5,5,5,0) 40%, rgba(5,5,5,0.92) 100%);
+      }
+
+      .cs-split .raw { border-right: 1px solid rgba(245, 241, 234, 0.14); }
+
+      .cs-split span {
+         position: relative;
+         z-index: 2;
+         font-size: 13px;
+         letter-spacing: 0.3em;
+         text-transform: uppercase;
+         color: rgba(245, 241, 234, 0.85);
+      }
+
+      /* ---------------------------------------------------------
+         SECTION 09 — WHY CARDS (icon grid)
+      --------------------------------------------------------- */
+      .cs-icon-grid {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+         gap: 20px;
+      }
+
+      .cs-icon-card {
+         padding: 30px 26px;
+         border-radius: 20px;
+         border: 1px solid rgba(245, 241, 234, 0.12);
+         background: linear-gradient(150deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+         transition: transform 0.35s ease, border-color 0.35s ease;
+      }
+
+      .cs-icon-card:hover { transform: translateY(-6px); border-color: rgba(245, 241, 234, 0.3); }
+
+      .cs-icon-card .icon {
+         width: 46px;
+         height: 46px;
+         border-radius: 14px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border: 1px solid rgba(245, 241, 234, 0.2);
+         background: rgba(255,255,255,0.05);
+         margin-bottom: 20px;
+         color: #f5f1ea;
+         font-size: 18px;
+      }
+
+      .cs-icon-card h3 { font-size: 16px; margin-bottom: 8px; color: #fff; }
+      .cs-icon-card p { color: rgba(245, 241, 234, 0.66); font-size: 14px; line-height: 1.7; margin: 0; }
+
+      /* ---------------------------------------------------------
+         SECTION 11 — VISION STATEMENT
+      --------------------------------------------------------- */
+      .cs-vision {
+         text-align: center;
+      }
+
+      .cs-vision .headline { font-size: clamp(32px, 5vw, 64px); }
+      .cs-vision .accent-line { color: #f5f1ea; }
+
+      /* ---------------------------------------------------------
+         SECTION 14 — 3D PRINT GALLERY
+      --------------------------------------------------------- */
+      .cs-gallery-grid {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+         gap: 18px;
+      }
+
+      .cs-gallery-card {
+         position: relative;
+         min-height: 260px;
+         border-radius: 20px;
+         border: 1px solid rgba(245, 241, 234, 0.12);
+         background: linear-gradient(150deg, rgba(255,255,255,0.06), rgba(255,255,255,0.015));
+         overflow: hidden;
+         transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+      }
+
+      .cs-gallery-card:hover {
+         transform: translateY(-6px);
+         border-color: rgba(245, 241, 234, 0.3);
+         box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+      }
+
+      .cs-gallery-img {
+         position: absolute;
+         inset: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+         display: block;
+         transition: transform 0.6s ease;
+      }
+
+      .cs-gallery-card:hover .cs-gallery-img {
+         transform: scale(1.06);
+      }
+
+      /* ---------------------------------------------------------
+         SECTION 15 — LEADERSHIP
+      --------------------------------------------------------- */
+      .cs-leadership-header {
+         max-width: 760px;
+         margin: 0 auto;
+         text-align: center;
+      }
+
+      .cs-leadership-header .eyebrow { justify-content: center; }
+      .cs-leadership-header .copy { margin-right: auto; margin-left: auto; }
+
+      .cs-leadership-grid {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(0, 1fr));
+         gap: 24px;
+         max-width: 1300px;
+         margin: 64px auto 0;
+      }
+
+      .cs-leadership-card {
+         overflow: hidden;
+         border: 1px solid rgba(245, 241, 234, 0.12);
+         border-radius: 24px;
+         background: linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
+         box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+         transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+      }
+
+      .cs-leadership-card:hover {
+         transform: translateY(-8px);
+         border-color: rgba(245, 241, 234, 0.3);
+         box-shadow: 0 28px 60px rgba(0, 0, 0, 0.32);
+      }
+
+      .cs-leadership-portrait {
+         aspect-ratio: 1;
+         overflow: hidden;
+         border-radius: 20px;
+         margin: 14px 14px 0;
+      }
+
+      .cs-leadership-portrait img {
+         display: block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+         transition: transform 0.35s ease;
+      }
+
+      .cs-leadership-card:hover .cs-leadership-portrait img { transform: scale(1.05); }
+
+      .cs-leadership-content { padding: 24px 26px 28px; }
+
+      .cs-leadership-name {
+         margin: 0 0 9px;
+         color: rgba(245, 241, 234, 0.9);
+         font-size: 28px;
+         font-weight: 600;
+         line-height: 1.1;
+         transition: color 0.35s ease;
+      }
+
+      .cs-leadership-card:hover .cs-leadership-name { color: #ffffff; }
+
+      .cs-leadership-role {
+         margin: 0 0 15px;
+         color: rgba(245, 241, 234, 0.62);
+         font-size: 15px;
+         font-weight: 600;
+         letter-spacing: 0.08em;
+         line-height: 1.4;
+         text-transform: uppercase;
+         transition: color 0.35s ease;
+      }
+
+      .cs-leadership-card:hover .cs-leadership-role { color: #f5f1ea; }
+
+      .cs-leadership-summary {
+         display: -webkit-box;
+         overflow: hidden;
+         margin: 0;
+         color: rgba(245, 241, 234, 0.62);
+         font-size: 15px;
+         line-height: 1.65;
+         line-clamp: 2;
+         -webkit-box-orient: vertical;
+         -webkit-line-clamp: 2;
+      }
+
+      .cs-leadership-reveal {
+         opacity: 0;
+         filter: blur(12px);
+         transform: translateY(50px);
+         transition: opacity 0.7s ease var(--reveal-delay, 0s), transform 0.7s ease var(--reveal-delay, 0s), filter 0.7s ease var(--reveal-delay, 0s);
+      }
+
+      .cs-leadership-reveal.is-visible {
+         opacity: 1;
+         filter: blur(0);
+         transform: translateY(0);
+      }
+
+      /* ---------------------------------------------------------
+         SECTION 16 — CTA
+      --------------------------------------------------------- */
+      .cs-cta {
+         text-align: center;
+         padding: 100px 40px;
+         border-radius: 36px;
+         border: 1px solid rgba(245, 241, 234, 0.14);
+         background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.08), rgba(255,255,255,0.01) 60%);
+      }
+
+      .cs-cta .headline { font-size: clamp(34px, 5vw, 64px); }
+
+      .cs-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 12px;
+         padding: 18px 40px;
+         border-radius: 999px;
+         background: #f5f1ea;
+         color: #050505;
+         font-weight: 600;
+         font-size: 13px;
+         letter-spacing: 0.22em;
+         text-transform: uppercase;
+         margin-top: 34px;
+         transition: transform 0.35s ease, box-shadow 0.35s ease;
+      }
+
+      .cs-btn:hover {
+         transform: translateY(-4px);
+         box-shadow: 0 20px 50px rgba(245, 241, 234, 0.25);
+         color: #050505;
+      }
+
+      /* ---------------------------------------------------------
+         RESPONSIVE
+      --------------------------------------------------------- */
+      @media (max-width: 991px) {
+         .cs-split { grid-template-columns: 1fr; }
+
+         .cs-card-grid,
+         .cs-service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+         .cs-icon-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+         .cs-gallery-grid { grid-template-columns: 1fr; }
+
+         .cs-leadership-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+         .cs-service-card .cs-service-title { font-size: 17px; }
+      }
+
+      @media (max-width: 768px) {
+         .cs-about .cs-pad { padding: 90px 0; }
+         .cs-about .cs-pad-sm { padding: 60px 0; }
+         .cs-hero { padding: 150px 0 90px; min-height: auto; }
+         .cs-card-grid,
+         .cs-service-grid,
+         .cs-icon-grid { grid-template-columns: 1fr; }
+         .cs-split { grid-template-columns: 1fr; }
+         .cs-service-card .cs-service-title { font-size: 15px; }
+
+         .cs-leadership-grid { grid-template-columns: 1fr; gap: 18px; margin-top: 48px; }
+         .cs-leadership-content { padding: 22px 22px 26px; }
+         .cs-leadership-name { font-size: 26px; }
+      }
+
+      .tp-header-3-social {
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         gap: 5px;
+      }
+
+      .tp-header-3-social a {
+         margin-left: 0;
+      }
+   </style>
+</head>
+
+<body id="body" class="tp-smooth-scroll">
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+
+   <!-- pre loader area start -->
+   <div id="loading" class="preloader-wrap">
+      <div class="preloader-2 text-center">
+         <span class="line line-1"></span>
+         <span class="line line-2"></span>
+         <span class="line line-3"></span>
+         <span class="line line-4"></span>
+         <span class="line line-5"></span>
+         <span class="line line-6"></span>
+         <span class="line line-7"></span>
+         <span class="line line-8"></span>
+         <span class="line line-9"></span>
+         <div class="loader-text">Loading ...</div>
+      </div>
+   </div>
+   <!-- pre loader area end -->
+
+   <!-- back to top start -->
+   <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+               stroke-linejoin="round" />
+         </svg>
+      </button>
+   </div>
+   <!-- back to top end -->
+
+   <!-- tp-offcanvus-area-end -->
+   <div class="tp-offcanvas-area">
+      <div class="tp-offcanvas-wrapper">
+         <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+                       <div class="tp-offcanvas-logo">
+               <a href="index.html">
+                  <img class="logo-1" src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo">
+                  <img class="logo-2" src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo">
+               </a>
+            </div>
+            <div class="tp-offcanvas-close">
+               <button class="tp-offcanvas-close-btn">
+                  <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div class="tp-offcanvas-main">
+           
+            <div class="tp-main-menu-mobile d-xl-none"></div>
+             
+            <div class="tp-offcanvas-contact">
+               <h3 class="tp-offcanvas-title sm">Information</h3>
+
+               <ul>
+                   <li><a href="mailto:hello@coolsquarestudio.com">hello@coolsquarestudio.com</a></li>
+                </ul>
+            </div>
+            
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
+
+    
+
+   <header>
+
+      <!-- header top area start -->
+      <div id="header-sticky" class="tp-header-3-area mt-35 z-index-5">
+            <span class="menu-bg"></span>
+            <div class="container container-1740">
+               <div class="row align-items-center">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                     <div class="tp-header-logo tp-header-3-logo">
+                        <a class="logo-1" href="index.html"><img src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo"></a>
+                        <a class="logo-2" href="index.html"><img src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo"></a>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-xl-block">
+                     <div class="tp-header-3-menu-wrap text-center">
+                        <div class="tp-header-3-menu-box d-inline-flex align-items-center justify-content-between">
+                           <div class="tp-header-3-menu header-main-menu">
+                              <nav class="tp-main-menu-content">
+                                 <ul>
+                                    <li class="has-dropdown">
+                                       <a href="index.html">Home</a>
+                                       
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="about-us.html">About Us</a> 
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="services.html">Services</a>
+                                       
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="portfolio.html">Portfolio</a>
+                                       
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="contact.html">Contact</a>
+                                       
+                                    </li>
+                                     
+                                 </ul>
+                              </nav>
+                           </div>
+                           <div class="tp-header-3-cart p-relative">
+                               
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                     <div class="tp-header-3-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-3-social d-none d-sm-block">
+                           <a href="https://www.linkedin.com/company/coolsquarestudio/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                           <a href="https://www.instagram.com/coolsquarestudio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                           <a href="https://www.youtube.com/@AICreativeCompany" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <button class="tp-header-3-bar tp-offcanvas-open-btn d-xl-none"><i class="fa-solid fa-bars"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+      <!-- header top area end -->
+
+   </header>
+
+   <div id="smooth-wrapper">
+      <div id="smooth-content">
+
+         <main class="cs-about">
+
+            <!-- ============ SECTION 01 — HERO ============ -->
+            <section class="cs-hero">
+               <div class="cs-hero-video-bg">
+                  <video autoplay muted loop playsinline preload="auto">
+                     <source src="assets/video/Coolsquare_Logo.mp4" type="video/mp4">
+                  </video>
+               </div>
+               <div class="wrap cs-hero-content" id="csHeroContent">
+                  <h1 class="headline reveal is-visible">We don't just create content.<br>We build digital worlds.</h1>
+                  <p class="copy centered reveal is-visible reveal-delay-1">Creative production powered by storytelling, technology, and craftsmanship.</p>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 02 — STUDIO INTRO ============ -->
+            <section class="cs-pad">
+               <div class="wrap cs-intro-grid">
+                  <div class="reveal">
+                     <img class="cs-intro-logo" src="CoolSquare_Logo.png" alt="Cool Square Studio logo">
+                     <h2>Creative Production.<br>Powered by Technology.</h2>
+                     <p class="copy">Cool Square Studio is a creative production company specializing in Digital Humans, 3D Animation, Character &amp; Creature Creation, CGI, VFX, AI Production, Immersive Experiences, Educational Content, Video Restoration, and Custom 3D Printing.</p>
+                     <p class="copy">We combine artistic creativity with advanced production technologies to create cinematic visuals, interactive experiences, and production-ready digital content for advertising, entertainment, education, gaming, and emerging media.</p>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 03 — OUR STORY ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap cs-story-grid">
+                  <div class="reveal">
+                     <div class="eyebrow">Our Story</div>
+                     <h2 class="headline" style="font-size:clamp(32px,3.6vw,49px)">Built by Creators.<br>Driven by Production.</h2>
+                     <p class="copy">Cool Square Studio began with a simple belief: that technology should amplify craftsmanship, not replace it. From early experiments in 3D animation to full-scale CGI and AI-driven production, our team has grown around one discipline — telling stories that move people.</p>
+                     <p class="copy">Today, that same curiosity drives everything we build, from digital humans to immersive worlds, always led by artists and refined by process.</p>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 04 — VALUE CARDS ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="eyebrow reveal">Studio Values</div>
+                  <div class="cs-card-grid">
+                     <div class="cs-value-card reveal"><span class="num">01</span><h3>Creativity First</h3><p>Great ideas lead every production.</p></div>
+                     <div class="cs-value-card reveal reveal-delay-1"><span class="num">02</span><h3>Production Matters</h3><p>Strong pipelines create exceptional work.</p></div>
+                     <div class="cs-value-card reveal reveal-delay-2"><span class="num">03</span><h3>Collaboration</h3><p>The best work comes from people.</p></div>
+                     <div class="cs-value-card reveal reveal-delay-3"><span class="num">04</span><h3>Innovation</h3><p>Technology empowers creativity.</p></div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 05 — WHAT WE CREATE ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="eyebrow reveal">What We Create</div>
+                  <h2 class="headline reveal" style="font-size:clamp(32px,4.2vw,58px)">Ideas Come In Many Forms.<br>So Do We.</h2>
+                  <div class="cs-service-grid" style="margin-top:48px">
+                     <div class="cs-service-card reveal"><span class="cs-service-bg" style="background-image:url('assets/images/Digital_Humans.jpeg');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">Digital Humans</span></div>
+                     <div class="cs-service-card reveal reveal-delay-1"><span class="cs-service-bg" style="background-image:url('assets/images/CGI.jpeg');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">CGI</span></div>
+                     <div class="cs-service-card reveal reveal-delay-2"><span class="cs-service-bg" style="background-image:url('assets/images/VFX.jpeg');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">VFX</span></div>
+                     <div class="cs-service-card reveal reveal-delay-3"><span class="cs-service-bg" style="background-image:url('assets/images/Animation.png');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">Animation</span></div>
+                     <div class="cs-service-card reveal"><span class="cs-service-bg" style="background-image:url('assets/images/GENERATIVE_AI.jpeg');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">AI Production</span></div>
+                     <div class="cs-service-card cs-service-card--immersive reveal reveal-delay-1"><span class="cs-service-bg" style="background-image:url('assets/img/home-03/portfolio/Immersive_01.jpg');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">Immersive Experiences</span></div>
+                     <div class="cs-service-card reveal reveal-delay-2"><span class="cs-service-bg" style="background-image:url('assets/images/Educational.jpeg');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">Educational Content</span></div>
+                     <div class="cs-service-card reveal reveal-delay-3"><span class="cs-service-bg" style="background-image:url('assets/images/3D_printing.jpeg');"></span><span class="cs-service-overlay"></span><span class="accent"></span><span class="cs-service-title">3D Printing</span></div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 08 — VFX BREAKDOWN ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="eyebrow reveal">VFX Breakdown</div>
+                  <div class="cs-split reveal" style="margin-top:32px">
+                     <div class="raw" style="background-image:url('assets/images/CGI_RAW.jpeg')"><span>Raw</span></div>
+                     <div class="final" style="background-image:url('assets/images/CGI_FINAL.jpeg')"><span>Final</span></div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 09 — WHY CLIENTS WORK WITH US ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="eyebrow reveal">Why Clients Work With Us</div>
+                  <div class="cs-icon-grid" style="margin-top:32px">
+                     <div class="cs-icon-card reveal"><div class="icon"><i class="fa-solid fa-clapperboard"></i></div><h3>Production First</h3><p>Clear pipelines guide every deliverable from day one.</p></div>
+                     <div class="cs-icon-card reveal reveal-delay-1"><div class="icon"><i class="fa-solid fa-compass-drafting"></i></div><h3>Creative Direction</h3><p>A singular visual point of view across every frame.</p></div>
+                     <div class="cs-icon-card reveal reveal-delay-2"><div class="icon"><i class="fa-solid fa-comments"></i></div><h3>Reliable Communication</h3><p>Transparent updates throughout production.</p></div>
+                     <div class="cs-icon-card reveal reveal-delay-3"><div class="icon"><i class="fa-solid fa-microchip"></i></div><h3>Technical Excellence</h3><p>Precision tools paired with artistic craft.</p></div>
+                     <div class="cs-icon-card reveal"><div class="icon"><i class="fa-solid fa-diagram-project"></i></div><h3>Scalable Pipelines</h3><p>Systems built to grow with ambitious projects.</p></div>
+                     <div class="cs-icon-card reveal reveal-delay-1"><div class="icon"><i class="fa-solid fa-gem"></i></div><h3>Consistent Quality</h3><p>Every delivery held to the same high standard.</p></div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 10 — ANIMATION REEL ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="cs-frame tall reveal">
+                     <img class="cs-frame-photo" src="assets/images/Animation.jpeg" alt="Animation reel showcase">
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 11 — OUR VISION ============ -->
+            <section class="cs-pad">
+               <div class="wrap cs-vision">
+                  <div class="eyebrow reveal" style="justify-content:center">Our Vision</div>
+                  <h2 class="headline reveal">THE FUTURE ISN'T AI.<br><span class="accent-line">THE FUTURE IS</span><br>CREATIVE PRODUCTION<br><span class="accent-line">POWERED BY INTELLIGENT TECHNOLOGY.</span></h2>
+                  <p class="copy centered reveal reveal-delay-1">Intelligent technology extends the imagination when it is guided by human craft.</p>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 12 — UNREAL ENGINE ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="cs-frame tall reveal">
+                     <img class="cs-frame-photo" src="assets/images/Unreal_Engine.jpeg" alt="Unreal Engine realtime virtual production">
+                     <div class="cs-frame-label"><span class="dot"></span>Unreal Engine</div>
+                     <div class="cs-frame-meta"><span>Environment</span><span>Lighting</span><span>Realtime</span></div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 14 — 3D PRINT GALLERY ============ -->
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="eyebrow reveal">3D Print Gallery</div>
+                  <div class="cs-gallery-grid" style="margin-top:32px">
+                     <div class="cs-gallery-card reveal"><img class="cs-gallery-img" src="assets/images/3D_printed_01.jpeg" alt="3D printed model 1"></div>
+                     <div class="cs-gallery-card reveal reveal-delay-1"><img class="cs-gallery-img" src="assets/images/3D_printed_02.jpeg" alt="3D printed model 2"></div>
+                     <div class="cs-gallery-card reveal reveal-delay-2"><img class="cs-gallery-img" src="assets/images/3D_printed_03.jpeg" alt="3D printed model 3"></div>
+                  </div>
+               </div>
+            </section>
+
+            <!-- ============ SECTION 15 — LEADERSHIP ============ -->
+            <section class="cs-pad">
+               <div class="wrap">
+                  <div class="cs-leadership-header">
+                                 <div class="eyebrow reveal">Leadership</div>
+                                 <h2 class="headline reveal">The Minds Behind Cool Square Studio</h2>
+                                 <p class="copy reveal reveal-delay-1">A multidisciplinary team shaping the future of AI-driven storytelling.</p>
+                              </div>
+
+                              <div class="cs-leadership-grid">
+                                 <article class="cs-leadership-card cs-leadership-reveal" style="--reveal-delay: 0s">
+                                    <div class="cs-leadership-portrait"><img src="assets/images/Rateesh Raveendran.png" alt="Ratheesh Raveendran, Founder"></div>
+                                    <div class="cs-leadership-content"><h3 class="cs-leadership-name">Ratheesh Raveendran</h3><p class="cs-leadership-role">Founder</p><p class="cs-leadership-summary">Driving the vision and long-term growth of Cool Square Studio.</p></div>
+                                 </article>
+                                 <article class="cs-leadership-card cs-leadership-reveal" style="--reveal-delay: 0.1s">
+                                    <div class="cs-leadership-portrait"><img src="assets/images/Manjunathan Subramanian.png" alt="Manjunathan Subramani, Chief Operating Officer"></div>
+                                    <div class="cs-leadership-content"><h3 class="cs-leadership-name">Manjunathan Subramani</h3><p class="cs-leadership-role">Chief Operating Officer</p><p class="cs-leadership-summary">Leading operations with decades of administrative and organizational expertise.</p></div>
+                                 </article>
+                                 <article class="cs-leadership-card cs-leadership-reveal" style="--reveal-delay: 0.2s">
+                                    <div class="cs-leadership-portrait"><img src="assets/images/Tamil Selvi.png" alt="Tamil Selvi, Head of Business Strategy"></div>
+                                    <div class="cs-leadership-content"><h3 class="cs-leadership-name">Tamil Selvi</h3><p class="cs-leadership-role">Head of Business Strategy</p><p class="cs-leadership-summary">Developing strategic partnerships and driving sustainable business growth.</p></div>
+                                 </article>
+                                 <article class="cs-leadership-card cs-leadership-reveal" style="--reveal-delay: 0.3s">
+                                    <div class="cs-leadership-portrait"><img src="assets/images/Anish Mohan.png" alt="Anish Mohan, Consultant CG and 3D Supervisor"></div>
+                                    <div class="cs-leadership-content"><h3 class="cs-leadership-name">Anish Mohan</h3><p class="cs-leadership-role">Consultant CG &amp; 3D Supervisor</p><p class="cs-leadership-summary">Guiding creative excellence with nearly two decades of CG and VFX expertise.</p></div>
+                                 </article>
+                                 <article class="cs-leadership-card cs-leadership-reveal" style="--reveal-delay: 0.4s">
+                                    <div class="cs-leadership-portrait"><img src="assets/images/Giriprasath.jpg" alt="Giriprasath, Head of AI Filmmaking and Innovation"></div>
+                                    <div class="cs-leadership-content"><h3 class="cs-leadership-name">Giriprasath</h3><p class="cs-leadership-role">Head of AI Filmmaking &amp; Innovation</p><p class="cs-leadership-summary">Redefining cinematic storytelling through AI-powered innovation.</p></div>
+                                 </article>
+                                 <article class="cs-leadership-card cs-leadership-reveal" style="--reveal-delay: 0.5s">
+                                    <div class="cs-leadership-portrait"><img src="assets/images/Priya K.png" alt="Priya Krishnamurthy, Executive Producer"></div>
+                                    <div class="cs-leadership-content"><h3 class="cs-leadership-name">Priya Krishnamurthy</h3><p class="cs-leadership-role">Executive Producer</p><p class="cs-leadership-summary">Overseeing productions from concept to final delivery with precision.</p></div>
+                                 </article>
+                                 <article class="cs-leadership-card cs-leadership-reveal" style="--reveal-delay: 0.6s">
+                                    <div class="cs-leadership-portrait"><img src="assets/images/Prameetha Gopinath.png" alt="Prameeta G, Marketing and Brand Communications Executive"></div>
+                                    <div class="cs-leadership-content"><h3 class="cs-leadership-name">Prameeta G</h3><p class="cs-leadership-role">Marketing &amp; Brand Communications Executive</p><p class="cs-leadership-summary">Building meaningful brand experiences through creative digital marketing.</p></div>
+                                 </article>
+                              </div>
+                  </div>
+               </div>
+            </section>
+            <!-- Legacy team content removed
+            <section class="cs-pad-sm">
+               <div class="wrap">
+                  <div class="eyebrow reveal">Meet the Team</div>
+                  <h2 class="headline reveal">Meet the Team Behind Cool Square</h2>
+                  <p class="copy reveal reveal-delay-1">Our strength comes from experienced artists, producers, strategists, and innovators working together to transform ideas into world-class digital productions.</p>
+
+                  <div class="cs-team-grid">
+                     <article class="cs-team-card reveal">
+                        <div class="cs-team-portrait"><img src="assets/images/Anish_Mohan.jpg" alt="Anish Mohan, Consultant CG and 3D Supervisor"></div>
+                        <div class="cs-team-content">
+                           <h3 class="cs-team-name">Anish Mohan</h3>
+                           <p class="cs-team-role">Consultant CG &amp; 3D Supervisor</p>
+                           <div class="cs-team-badges"><span class="cs-team-badge">CG</span><span class="cs-team-badge">3D</span><span class="cs-team-badge">VFX</span><span class="cs-team-badge">Supervision</span></div>
+                           <div class="cs-team-bio">
+                              <p>Anish brings more than 20 years of experience in computer graphics, visual effects, asset creation, and 3D production. His career spans leading studios including The Mill, Rhythm &amp; Hues, Deluxe Animation, PhantomFX, Cirqus Studios, and Viskefi. At Cool Square, he translates creative briefs into robust production strategies, guiding CG, 3D visualization, rapid prototyping, and 3D printing initiatives. His blend of artistic direction and technical precision helps teams deliver ambitious visual work with clarity, innovation, and exceptional finish. He keeps every production focused and accountable.</p>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="cs-team-card reverse reveal reveal-delay-1">
+                        <div class="cs-team-portrait"><img src="assets/images/Giriprasath_S.jpg" alt="Giriprasath S, AI Creative Head"></div>
+                        <div class="cs-team-content">
+                           <h3 class="cs-team-name">Giriprasath S</h3>
+                           <p class="cs-team-role">AI Creative Head</p>
+                           <div class="cs-team-badges"><span class="cs-team-badge">AI</span><span class="cs-team-badge">VFX</span><span class="cs-team-badge">Creative Direction</span><span class="cs-team-badge">Film</span></div>
+                           <div class="cs-team-bio">
+                              <p>Giriprasath leads Cool Square's AI creative vision, combining cinematic storytelling, visual effects expertise, and generative tools to build production-ready work. With more than a decade in creative production, his experience includes MPC Advertising, DNEG, The Mill, Jellyfish Pictures, and Zealous Studio. He develops AI-powered workflows from early concept and visual design through generated imagery and cinematic video, balancing new technology with enduring filmmaking principles. His focus is original, scalable work that meets the highest creative and technical standards. He keeps storytelling central to every decision.</p>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="cs-team-card reveal reveal-delay-2">
+                        <div class="cs-team-portrait"><img src="assets/images/Priya K.jpg" alt="Priya Krishnamurthy, Senior VFX and AI Producer"></div>
+                        <div class="cs-team-content">
+                           <h3 class="cs-team-name">Priya Krishnamurthy</h3>
+                           <p class="cs-team-role">Senior VFX &amp; AI Producer</p>
+                           <div class="cs-team-badges"><span class="cs-team-badge">Production</span><span class="cs-team-badge">VFX</span><span class="cs-team-badge">AI</span><span class="cs-team-badge">Strategy</span></div>
+                           <div class="cs-team-bio">
+                              <p>Priya brings over a decade of leadership across high-end visual effects, animation, and AI-driven production. Her background includes MPC, DNEG, Method Studios, TAG, Outpost VFX, and Mimic Productions, managing complex work in feature film, advertising, immersive experiences, and emerging AI workflows. At Cool Square, she pairs strategic planning with meticulous production leadership to turn ambitious ideas into seamless deliveries. Her collaborative approach keeps teams aligned, operations efficient, and every project focused on creative excellence and client success. She brings calm structure to demanding schedules.</p>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="cs-team-card reverse reveal reveal-delay-3">
+                        <div class="cs-team-portrait"><img src="assets/images/Prameetha_G.jpg" alt="Prameetha Gopinath, Marketing and Brand Communications"></div>
+                        <div class="cs-team-content">
+                           <h3 class="cs-team-name">Prameetha Gopinath</h3>
+                           <p class="cs-team-role">Marketing &amp; Brand Communications</p>
+                           <div class="cs-team-badges"><span class="cs-team-badge">Marketing</span><span class="cs-team-badge">Brand</span><span class="cs-team-badge">Social</span><span class="cs-team-badge">Research</span></div>
+                           <div class="cs-team-bio">
+                              <p>Prameetha brings a digital-first perspective to Cool Square's marketing and brand communication. She supports content planning, market research, social engagement, and brand initiatives that help the studio connect meaningfully with clients and audiences. Working closely with leadership and creative teams, she turns insight into clear, relevant communication while helping showcase the company's work across platforms. Her curiosity, collaborative energy, and grounding in marketing research make her a valuable voice as Cool Square continues to grow globally. She brings a thoughtful voice to every campaign.</p>
+                           </div>
+                        </div>
+                     </article>
+
+                     <article class="cs-team-card reveal reveal-delay-4">
+                        <div class="cs-team-portrait"><img src="assets/images/Tamilselvi.jpg" alt="Tamil Selvi, Business Strategy and Operations Head"></div>
+                        <div class="cs-team-content">
+                           <h3 class="cs-team-name">Tamil Selvi</h3>
+                           <p class="cs-team-role">Business Strategy &amp; Operations Head</p>
+                           <div class="cs-team-badges"><span class="cs-team-badge">Strategy</span><span class="cs-team-badge">Operations</span><span class="cs-team-badge">Finance</span><span class="cs-team-badge">Client Success</span></div>
+                           <div class="cs-team-bio">
+                              <p>Tamil brings over 15 years of experience across business operations, finance, procurement, and strategic planning. She guides client onboarding, clarifies business objectives, and helps each engagement begin with a strong operational foundation. At Cool Square, Tamil aligns commercial planning, internal processes, and cross-functional delivery to create clear ways of working and lasting client relationships. Her practical, people-first leadership brings together strategy and execution, enabling the studio to grow with confidence while delivering thoughtful creative and technology solutions. She builds confidence at every stage.</p>
+                           </div>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </section>
+
+            -->
+            <!-- ============ SECTION 16 — CTA ============ -->
+            <section class="cs-pad">
+               <div class="wrap">
+                  <div class="cs-cta reveal">
+                     <h2 class="headline">Let's Build Something Extraordinary.</h2>
+                     <p class="copy centered">Whether you're creating a commercial, digital human, animated film, immersive experience, educational platform, or AI-powered production, we're ready to transform ambitious ideas into unforgettable visual experiences.</p>
+                     <a class="cs-btn" href="contact.html">Start Your Project<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+               </div>
+            </section>
+
+         </main>
+
+          <footer>
+
+         
+<!-- footer area start -->
+<div class="tp-footer-3-area dark-bg pt-120">
+   <div class="container-fluid">
+      <div class="row">
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <img src="CoolSquare_Logo.png" style="width:120px; height:auto; display:block;" alt="COOL SQUARE STUDIO studio logo">
+               <p class="tp-footer-3-description">
+                  Cool Square Studio is a creative production studio specializing in 3D Animation, Digital Humans, Character & Creature Creation, Commercial CGI, Visual Effects (VFX), AI Filmmaking, Immersive Experiences, Video Restoration, and Custom 3D Solutions.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <h4 class="tp-footer-3-title">INDUSTRIES WE SERVE</h4>
+               <div class="tp-footer-3-industry-list">
+                  <p class="tp-footer-3-industry-item">Advertising Agencies</p>
+                  <p class="tp-footer-3-industry-item">Film &amp; OTT Studios</p>
+                  <p class="tp-footer-3-industry-item">Gaming Companies</p>
+                  <p class="tp-footer-3-industry-item">Music Labels</p>
+                  <p class="tp-footer-3-industry-item">Education</p>
+                  <p class="tp-footer-3-industry-item">Museums &amp; Cultural Institutions</p>
+                  <p class="tp-footer-3-industry-item">Architecture &amp; Real Estate</p>
+                  <p class="tp-footer-3-industry-item">Product &amp; Consumer Brands</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <h4 class="tp-footer-3-title">COMPANY</h4>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <h4 class="tp-footer-3-title">CONTACT</h4>
+               <ul>
+                  <li>Bangalore, India</li>
+                  <li>hello@coolsquarestudio.com</li>
+               </ul>
+
+               <div class="tp-footer-3-social mt-20">
+                  <a href="https://www.linkedin.com/company/coolsquarestudio/" target="_blank" rel="noopener noreferrer">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.instagram.com/coolsquarestudio/" target="_blank" rel="noopener noreferrer">
+                     <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://www.youtube.com/@AICreativeCompany" target="_blank" rel="noopener noreferrer">
+                     <i class="fa-brands fa-youtube"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+            <div class="tp-copyright-2-area tp-copyright-2-bdr-top dark-bg">
+               <div class="container container-1480">
+                  <div class="row align-items-center">
+                     <div class="col-xl-12 col-lg-5">
+                        <div class="  text-center text-lg-start">
+                           <p style="text-align: center;">All rights reserved — 2026 © COOL SQUARE STUDIO</p>
+                        </div>
+                     </div>
+                      
+                  </div>
+               </div>
+            </div>
+            <!-- footer area end -->
+
+         </footer>
+      </div>
+   </div>
+
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+
+   <script src="assets/js/gsap.js"></script>
+   <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+   <script src="assets/js/gsap-scroll-smoother.js"></script>
+   <script src="assets/js/gsap-scroll-trigger.js"></script>
+   <script src="assets/js/gsap-split-text.js"></script>
+   <script src="assets/js/chroma.min.js"></script>
+
+   <script src='assets/js/three.js'></script>
+   <script src='assets/js/tween-max.js'></script>
+   <script src='assets/js/scroll-magic.js'></script>
+
+   <script src="assets/js/range-slider.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/beforeafter.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/webgl.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/tp-cursor.js"></script>
+   <script>
+      document.addEventListener('DOMContentLoaded', () => {
+         const root = document.querySelector('.cs-about');
+         if (!root) return;
+
+         /* Reveal on scroll */
+         const reveals = Array.from(root.querySelectorAll('.reveal:not(.is-visible), .cs-leadership-reveal:not(.is-visible)'));
+         if (!('IntersectionObserver' in window)) {
+            reveals.forEach((item) => item.classList.add('is-visible'));
+            return;
+         }
+
+         const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+                  entry.target.classList.add('is-visible');
+                  revealObserver.unobserve(entry.target);
+               }
+            });
+         }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+         reveals.forEach((item) => revealObserver.observe(item));
+
+         /* Hero mouse parallax */
+         const heroContent = document.getElementById('csHeroContent');
+         if (heroContent && window.innerWidth > 768) {
+            const hero = heroContent.closest('.cs-hero');
+            hero.addEventListener('mousemove', (event) => {
+               const rect = hero.getBoundingClientRect();
+               const x = ((event.clientX - rect.left) / rect.width - 0.5) * 14;
+               const y = ((event.clientY - rect.top) / rect.height - 0.5) * 10;
+               heroContent.style.setProperty('--mx', `${x}px`);
+               heroContent.style.setProperty('--my', `${y}px`);
+            });
+            hero.addEventListener('mouseleave', () => {
+               heroContent.style.setProperty('--mx', '0px');
+               heroContent.style.setProperty('--my', '0px');
+            });
+         }
+
+         /* Content frame tilt on hover */
+         const frames = Array.from(root.querySelectorAll('.cs-frame, .cs-value-card, .cs-icon-card'));
+         frames.forEach((card) => {
+            card.addEventListener('mousemove', (event) => {
+               const rect = card.getBoundingClientRect();
+               const x = ((event.clientX - rect.left) / rect.width - 0.5) * 6;
+               const y = ((event.clientY - rect.top) / rect.height - 0.5) * 6;
+               card.style.transform = `translateY(-8px) rotateX(${-y}deg) rotateY(${x}deg)`;
+            });
+            card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+         });
+      });
+   </script>
+</body>
+
+</html>

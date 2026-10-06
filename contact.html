@@ -1,0 +1,725 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Contact Cool Square Studio | Start a Project</title>
+   <meta name="description" content="Contact Cool Square Studio to discuss VFX, CGI, AI production, animation or immersive experiences for your next project.">
+   <meta name="keywords" content="AI studio, VFX, video production, AI filmmaking, XR, immersive content, COOL SQUARE STUDIO">
+   <meta name="author" content="COOL SQUARE STUDIO">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="canonical" href="https://coolsquarestudio.com/contact.html">
+   <meta property="og:image" content="https://coolsquarestudio.com/CoolSquare_Logo.png">
+
+   <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "Organization",
+         "name": "COOL SQUARE STUDIO",
+         "url": "https://coolsquarestudio.com/",
+         "logo": "https://coolsquarestudio.com/favicon.png",
+         "sameAs": [
+            "https://www.linkedin.com/company/coolsquarestudio/"
+         ]
+      }
+   </script>
+
+   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/custom-animation.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+
+   <style>
+      .tp-hero-content p,
+      .tp-hero-content p span {
+         line-height: 1.4;
+         padding-bottom: 0.2em;
+         overflow: visible;
+      }
+
+      .tp-header-3-social {
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         gap: 5px;
+      }
+
+      .tp-header-3-social a {
+         margin-left: 0;
+      }
+
+      .ajax-response {
+         min-height: 24px;
+         margin-top: 12px;
+         font-size: 14px;
+      }
+
+      .ajax-response.success {
+         color: #9be7b4;
+      }
+
+      .ajax-response.error {
+         color: #ff8f8f;
+      }
+
+      /* MAP FULL FIX */
+      .contact-map {
+         width: 100%;
+         height: 100%;
+         min-height: 500px;
+         overflow: hidden;
+      }
+
+      .contact-map iframe {
+         width: 100%;
+         height: 100%;
+         border: 0;
+         display: block;
+         transform: scale(1.02);
+         transform-origin: center;
+      }
+
+      .cn-contactform-2-bg .row {
+         display: flex;
+         align-items: stretch;
+      }
+
+      .cn-contact-2-area .row {
+         display: flex;
+         align-items: stretch;
+      }
+
+      .cn-contact-2-area {
+         display: flex;
+         padding-bottom: 0 !important;
+         margin-bottom: 0 !important;
+      }
+
+      .cn-contact-2-area .container {
+         display: flex;
+         align-items: stretch;
+      }
+
+      .cn-contact-2-area .col-xl-6,
+      .cn-contact-2-area .col-lg-6 {
+         padding-bottom: 0 !important;
+      }
+
+      .contact-map,
+      .contact-form {
+         height: auto;
+         min-height: 500px;
+      }
+
+      .map-frame {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         min-height: 500px;
+         display: flex;
+         line-height: 0;
+         border-radius: 20px;
+         overflow: hidden;
+         background: rgba(0, 0, 0, 0.4);
+         backdrop-filter: blur(10px);
+         -webkit-backdrop-filter: blur(10px);
+         box-shadow:
+            0 20px 60px rgba(0, 0, 0, 0.6),
+            inset 0 0 40px rgba(0, 0, 0, 0.4);
+         border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .map-frame iframe {
+         width: 100%;
+         height: 110%;
+         display: block;
+         flex: 1;
+         border: none;
+      }
+
+      .cn-contactform-2-map,
+      .cn-contactform-2-map iframe {
+         height: 100% !important;
+         min-height: 500px;
+      }
+
+      .cn-contactform-2-map,
+      .cn-contact-2-map {
+         height: auto;
+         display: flex;
+      }
+
+      .cn-contact-2-map iframe {
+         width: 100%;
+         height: 100% !important;
+         min-height: 100%;
+         border: 0;
+         display: block;
+      }
+
+      .cn-contactform-2-map .map-frame,
+      .cn-contact-2-map .map-frame {
+         width: 100%;
+         height: 100%;
+         flex: 1;
+      }
+
+      .tm-hero-ptb {
+         padding-top: 140px;
+         padding-bottom: 70px;
+      }
+
+      .contact-form,
+      .cn-contact-2-form {
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+
+      .contact-location-section {
+         padding: 0 30px 90px;
+      }
+
+      .contact-location-frame {
+         height: 70vh;
+         overflow: hidden;
+         border-radius: 24px;
+         opacity: 0;
+         transform: translateY(30px);
+         animation: fadeUp 0.8s ease forwards;
+      }
+
+      .location-video {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         filter: none;
+         opacity: 1;
+         transition: transform 0.5s ease;
+      }
+
+      .contact-location-frame:hover .location-video {
+         transform: scale(1.05);
+      }
+
+      @media (max-width: 767px) {
+         .contact-location-section {
+            padding: 0 15px 60px;
+         }
+
+         .contact-location-frame {
+            height: 70vh;
+            min-height: 420px;
+         }
+      }
+
+      @keyframes fadeUp {
+         to {
+            opacity: 1;
+            transform: translateY(0);
+         }
+      }
+
+      html,
+      body {
+         max-width: 100%;
+         overflow-x: hidden;
+      }
+
+      @media (max-width: 768px) {
+         .container,
+         .section,
+         .service-section,
+         .services-section {
+            width: 100% !important;
+            max-width: 100% !important;
+            overflow: visible !important;
+            padding-left: 16px;
+            padding-right: 16px;
+         }
+
+         .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+         }
+
+         img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+         }
+
+         .section::before,
+         .section::after,
+         .services-section::before,
+         .services-section::after {
+            display: none !important;
+            content: none !important;
+            mask-image: none !important;
+            -webkit-mask-image: none !important;
+         }
+
+         .contact-map,
+         .map-frame {
+            overflow: visible !important;
+         }
+
+         [class*="container-"] {
+            width: 100% !important;
+            max-width: 100% !important;
+         }
+      }
+   </style>
+</head>
+
+<body>
+
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+
+   <!-- pre loader area start -->
+   <div id="loading" class="preloader-wrap">
+      <div class="preloader-2 text-center">
+         <span class="line line-1"></span>
+         <span class="line line-2"></span>
+         <span class="line line-3"></span>
+         <span class="line line-4"></span>
+         <span class="line line-5"></span>
+         <span class="line line-6"></span>
+         <span class="line line-7"></span>
+         <span class="line line-8"></span>
+         <span class="line line-9"></span>
+         <div class="loader-text">Loading ...</div>
+      </div>
+   </div>
+   <!-- pre loader area end -->
+
+   <!-- back to top start -->
+   <div class="back-to-top-wrapper">
+      <button id="back_to_top" type="button" class="back-to-top-btn">
+         <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+               stroke-linejoin="round" />
+         </svg>
+      </button>
+   </div>
+   <!-- back to top end -->
+
+   <!-- tp-offcanvus-area-end -->
+   <div class="tp-offcanvas-area">
+      <div class="tp-offcanvas-wrapper">
+         <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+                       <div class="tp-offcanvas-logo">
+               <a href="index.html">
+                  <img class="logo-1" src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo">
+                  <img class="logo-2" src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo">
+               </a>
+            </div>
+            <div class="tp-offcanvas-close">
+               <button class="tp-offcanvas-close-btn">
+                  <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <div class="tp-offcanvas-main">
+           
+            <div class="tp-main-menu-mobile d-xl-none"></div>
+             
+            <div class="tp-offcanvas-contact">
+               <h3 class="tp-offcanvas-title sm">Information</h3>
+
+               <ul>
+                   <li><a href="mailto:hello@coolsquarestudio.com">hello@coolsquarestudio.com</a></li>
+                </ul>
+            </div>
+            
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
+
+   
+   <!-- cart mini area start -->
+   <div class="cartmini__area">
+      <div class="cartmini__wrapper d-flex justify-content-between flex-column">
+            <div class="cartmini__top-wrapper">
+               <div class="cartmini__top p-relative">
+                  <div class="cartmini__top-title">
+                        <h4>Shopping cart</h4>
+                  </div>
+                  <div class="cartmini__close">
+                        <button type="button" class="cartmini__close-btn cartmini-close-btn"><i class="fal fa-times"></i></button>
+                  </div>
+               </div>
+               <div class="cartmini__shipping">
+               <p> Free Shipping for all orders over <span>$50</span></p>
+               <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" data-width="70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>                   
+               </div>
+               <div class="cartmini__widget">
+                  <div class="cartmini__widget-item">
+                        <div class="cartmini__thumb">
+                        <a href="shop-details.html">
+                           <img src="assets/img/inner-blog/blog-sidebar/rc-post/rc-1.jpg" alt="COOL SQUARE STUDIO visual content">
+                        </a>
+                        </div>
+                        <div class="cartmini__content">
+                        <h5 class="cartmini__title"><a href="shop-details.html">Level Bolt Smart Lock</a></h5>
+                        <div class="cartmini__price-wrapper">
+                           <span class="cartmini__price">$46.00</span>
+                           <span class="cartmini__quantity">x2</span>
+                        </div>
+                        </div>
+                        <a href="#" class="cartmini__del"><i class="fa-regular fa-xmark"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="cartmini__checkout">
+               <div class="cartmini__checkout-title mb-30">
+                  <h4>Subtotal:</h4>
+                  <span>$113.00</span>
+               </div>
+               <div class="cartmini__checkout-btn">
+                  <a href="cart.html" class="tp-btn-black-2 text-center mb-10 w-100"> view cart</a>
+                  <a href="checkout.html" class="tp-btn-black-2 text-center w-100"> checkout</a>
+               </div>
+            </div>
+      </div>
+   </div>
+   <!-- cart mini area end -->
+
+
+
+   <header>
+
+      <!-- header top area start -->
+      <div id="header-sticky" class="tp-header-3-area mt-35 z-index-5">
+            <span class="menu-bg"></span>
+            <div class="container container-1740">
+               <div class="row align-items-center">
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                     <div class="tp-header-logo tp-header-3-logo">
+                        <a class="logo-1" href="index.html"><img src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo"></a>
+                        <a class="logo-2" href="index.html"><img src="CoolSquare_Logo.png" alt="COOL SQUARE STUDIO studio logo"></a>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-xl-block">
+                     <div class="tp-header-3-menu-wrap text-center">
+                        <div class="tp-header-3-menu-box d-inline-flex align-items-center justify-content-between">
+                           <div class="tp-header-3-menu header-main-menu">
+                              <nav class="tp-main-menu-content">
+                                 <ul>
+                                    <li class="has-dropdown">
+                                       <a href="index.html">Home</a>
+                                       
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="about-us.html">About Us</a> 
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="services.html">Services</a>
+                                       
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="portfolio.html">Portfolio</a>
+                                       
+                                    </li>
+                                    <li class="has-dropdown">
+                                       <a href="contact.html">Contact</a>
+                                       
+                                    </li>
+                                     
+                                 </ul>
+                              </nav>
+                           </div>
+                           <div class="tp-header-3-cart p-relative">
+                               
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                     <div class="tp-header-3-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-3-social d-none d-sm-block">
+                           <a href="https://www.linkedin.com/company/coolsquarestudio/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                           <a href="https://www.instagram.com/coolsquarestudio/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                           <a href="https://www.youtube.com/@AICreativeCompany" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <button class="tp-header-3-bar tp-offcanvas-open-btn d-xl-none"><i class="fa-solid fa-bars"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+      <!-- header top area end -->
+
+   </header>
+   
+
+   <div id="smooth-wrapper">
+      <div id="smooth-content">
+
+         <div class="inner-bg" data-background="assets/img/home-01/team/team-details-bg.png">
+            
+            <main>
+   
+               <!-- hero area start -->
+               <div class="tm-hero-area tm-hero-ptb p-relative">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-12">
+                           <div class="tm-hero-content">
+                              <span class="tm-hero-subtitle">COOL SQUARE STUDIO</span>
+                               <h1 class="tm-hero-title-big tp-char-animation">Get <br> in touch</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- hero area end -->
+   
+               <!-- contact area start -->
+               <div class="cn-contactform-area cn-contactform-style p-relative pb-80">
+                  <div class="container container-1840">
+                     <div class="cn-contactform-2-bg black-bg">
+                        <div class="row">
+                           <div class="col-xl-6">
+                              <div class="cn-contactform-2-map tp-map">
+                                 <div class="contact-map">
+                                    <div class="map-frame">
+                                       <iframe
+                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124811.32!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1"
+                                         width="100%"
+                                         height="100%"
+                                         style="border:0;"
+                                         allowfullscreen=""
+                                         loading="lazy">
+                                       </iframe>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-6">
+                              <div class="cn-contactform-wrap contact-form">
+                                 <h4 class="cn-contactform-2-title">Send a Message</h4>
+                                 <form id="contact-form" action="mailto:hello@coolsquarestudio.com" method="POST" enctype="text/plain">
+                                    <div class="cn-contactform-input mb-25">
+                                       <label>Name</label>
+                                       <input name="name" type="text" placeholder="John Doe" required>
+                                    </div>
+                                    <div class="cn-contactform-input mb-25">
+                                       <label>Email</label>
+                                       <input name="email" type="email" placeholder="Your@email.com" required>
+                                    </div>
+                                    <div class="cn-contactform-input mb-25">
+                                       <label>Message</label>
+                                       <textarea name="message" placeholder="Tell Us About Your Project" required></textarea>
+                                    </div>
+                                    <div class="cn-contactform-btn">
+                                       <button class="tp-btn-black-md white-bg w-100" type="submit">Send Message</button>
+                                       <p class="ajax-response mt-5" role="status" aria-live="polite"></p>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- contact area end -->
+
+               <!-- location video start -->
+               <section class="contact-location-section">
+                  <div class="contact-location-frame">
+                     <video autoplay muted loop playsinline preload="auto" class="location-video" controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture disableremoteplayback aria-label="Bangalore location video">
+                        <source src="assets/video/Location.mp4" type="video/mp4">
+                     </video>
+                  </div>
+               </section>
+               <!-- location video end -->
+   
+   
+            </main>
+   
+           <footer>
+
+         
+<!-- footer area start -->
+<div class="tp-footer-3-area dark-bg pt-120">
+   <div class="container-fluid">
+      <div class="row">
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <img src="CoolSquare_Logo.png" style="width:120px; height:auto; display:block;" alt="COOL SQUARE STUDIO studio logo">
+               <p class="tp-footer-3-description">
+                  Cool Square Studio is a creative production studio specializing in 3D Animation, Digital Humans, Character & Creature Creation, Commercial CGI, Visual Effects (VFX), AI Filmmaking, Immersive Experiences, Video Restoration, and Custom 3D Solutions.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <h4 class="tp-footer-3-title">INDUSTRIES WE SERVE</h4>
+               <div class="tp-footer-3-industry-list">
+                  <p class="tp-footer-3-industry-item">Advertising Agencies</p>
+                  <p class="tp-footer-3-industry-item">Film &amp; OTT Studios</p>
+                  <p class="tp-footer-3-industry-item">Gaming Companies</p>
+                  <p class="tp-footer-3-industry-item">Music Labels</p>
+                  <p class="tp-footer-3-industry-item">Education</p>
+                  <p class="tp-footer-3-industry-item">Museums &amp; Cultural Institutions</p>
+                  <p class="tp-footer-3-industry-item">Architecture &amp; Real Estate</p>
+                  <p class="tp-footer-3-industry-item">Product &amp; Consumer Brands</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <h4 class="tp-footer-3-title">COMPANY</h4>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="col-xl-3 col-lg-6 col-md-6 mb-60 px-5">
+            <div class="tp-footer-3-widget tp-footer-3-column">
+               <h4 class="tp-footer-3-title">CONTACT</h4>
+               <ul>
+                  <li>Bangalore, India</li>
+                  <li>hello@coolsquarestudio.com</li>
+               </ul>
+
+               <div class="tp-footer-3-social mt-20">
+                  <a href="https://www.linkedin.com/company/coolsquarestudio/" target="_blank" rel="noopener noreferrer">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.instagram.com/coolsquarestudio/" target="_blank" rel="noopener noreferrer">
+                     <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://www.youtube.com/@AICreativeCompany" target="_blank" rel="noopener noreferrer">
+                     <i class="fa-brands fa-youtube"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+            <div class="tp-copyright-2-area tp-copyright-2-bdr-top dark-bg">
+               <div class="container container-1480">
+                  <div class="row align-items-center">
+                     <div class="col-xl-12 col-lg-5">
+                        <div class="  text-center text-lg-start">
+                           <p style="text-align: center;">All rights reserved — 2026 © COOL SQUARE STUDIO</p>
+                        </div>
+                     </div>
+                      
+                  </div>
+               </div>
+            </div>
+            <!-- footer area end -->
+
+         </footer>
+         </div>
+      </div>
+   </div>
+   
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+
+   <script src="assets/js/gsap.js"></script>
+   <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+   <script src="assets/js/gsap-scroll-smoother.js"></script>
+   <script src="assets/js/gsap-scroll-trigger.js"></script>
+   <script src="assets/js/gsap-split-text.js"></script>
+   <script src="assets/js/chroma.min.js"></script>
+
+   <script src='assets/js/three.js'></script>
+   <script src='assets/js/tween-max.js'></script>
+   <script src='assets/js/scroll-magic.js'></script>
+
+   <script src="assets/js/range-slider.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/beforeafter.js"></script>
+   <script src="assets/js/isotope-pkgd.js"></script>
+   <script src="assets/js/imagesloaded-pkgd.js"></script>
+   <script src="assets/js/webgl.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/tp-cursor.js"></script>
+   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         var form = document.getElementById('contact-form');
+         var responseMessage = document.querySelector('.ajax-response');
+
+         if (!form || !responseMessage) {
+            return;
+         }
+
+         form.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            responseMessage.textContent = '';
+            responseMessage.classList.remove('success', 'error');
+
+            try {
+               var response = await fetch(form.action, {
+                  method: 'POST',
+                  body: new FormData(form),
+                  headers: {
+                     Accept: 'application/json'
+                  }
+               });
+
+               if (!response.ok) {
+                  throw new Error('Submission failed');
+               }
+
+               responseMessage.classList.add('success');
+               responseMessage.textContent = 'Message sent successfully';
+               form.reset();
+            } catch (error) {
+               responseMessage.classList.remove('success');
+               responseMessage.classList.add('error');
+               responseMessage.textContent = 'Oops! An error occurred and your message could not be sent.';
+            }
+         });
+      });
+   </script>
+
+
+</body>
+
+</html>
