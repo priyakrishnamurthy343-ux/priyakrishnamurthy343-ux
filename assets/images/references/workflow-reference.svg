@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" rx="30" fill="#06090f"/>
+  <rect x="120" y="120" width="960" height="560" rx="24" fill="#0e1826"/>
+  <circle cx="260" cy="290" r="80" fill="#153047" stroke="#98b7d0" stroke-opacity="0.45"/>
+  <circle cx="600" cy="290" r="80" fill="#153047" stroke="#98b7d0" stroke-opacity="0.45"/>
+  <circle cx="940" cy="290" r="80" fill="#153047" stroke="#98b7d0" stroke-opacity="0.45"/>
+  <circle cx="260" cy="520" r="80" fill="#153047" stroke="#98b7d0" stroke-opacity="0.45"/>
+  <circle cx="600" cy="520" r="80" fill="#153047" stroke="#98b7d0" stroke-opacity="0.45"/>
+  <circle cx="940" cy="520" r="80" fill="#153047" stroke="#98b7d0" stroke-opacity="0.45"/>
+  <path d="M340 290h180" stroke="#dceffb" stroke-opacity="0.5" stroke-width="3"/>
+  <path d="M680 290h180" stroke="#dceffb" stroke-opacity="0.5" stroke-width="3"/>
+  <path d="M260 370v70" stroke="#dceffb" stroke-opacity="0.5" stroke-width="3"/>
+  <path d="M600 370v70" stroke="#dceffb" stroke-opacity="0.5" stroke-width="3"/>
+  <path d="M940 370v70" stroke="#dceffb" stroke-opacity="0.5" stroke-width="3"/>
+  <circle cx="260" cy="290" r="32" fill="#ffffff" opacity="0.24"/>
+  <circle cx="600" cy="290" r="32" fill="#ffffff" opacity="0.24"/>
+  <circle cx="940" cy="290" r="32" fill="#ffffff" opacity="0.24"/>
+  <circle cx="260" cy="520" r="32" fill="#ffffff" opacity="0.24"/>
+  <circle cx="600" cy="520" r="32" fill="#ffffff" opacity="0.24"/>
+  <circle cx="940" cy="520" r="32" fill="#ffffff" opacity="0.24"/>
+</svg>
